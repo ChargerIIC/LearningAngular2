@@ -11,3 +11,5 @@ class HelloAngularComponent {
     this.greeting = 'Hello Angular 2!';
   }
 }
+
+bootstrap(HelloAngularComponent); // Component is bootstrapped!
