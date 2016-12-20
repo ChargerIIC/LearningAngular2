@@ -1,0 +1,51 @@
+{
+  "name": "learning_angular2_chp1",
+  "version": "1.0.0",
+  "description": "Learning Angualr 2 Chapter 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChargerIIC/LearningAngular2.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ChargerIIC/LearningAngular2/issues"
+  },
+  "homepage": "https://github.com/ChargerIIC/LearningAngular2#readme",
+  "dependencies": {
+    "@angular/common": "^2.3.1",
+    "@angular/compiler": "^2.3.1",
+    "@angular/core": "^2.3.1",
+    "@angular/http": "^2.3.1",
+    "@angular/platform-browser": "^2.3.1",
+    "@angular/platform-browser-dynamic": "^2.3.1",
+    "@angular/router": "^3.3.1",
+    "@angular/router-deprecated": "^2.0.0-rc.2",
+    "bootstrap": "^3.3.7",
+    "es6-shim": "^0.35.2",
+    "reflect-metadata": "^0.1.8",
+    "rxjs": "^5.0.1",
+    "systemjs": "^0.19.41",
+    "zone.js": "^0.7.4"
+  },
+  "devDependencies": {
+    "concurrently": "^3.1.0",
+    "lite-server": "^2.2.2",
+    "typescript": "^2.1.4",
+    "typings": "^2.1.0"
+  },
+  "scripts": {
+    "preinstall": "rm -rf ./built",
+    "postinstall": "npm run typings install",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "lite": "lite-server",
+    "prestart": "tsc",
+    "start": "concurrently \"npm run tsc:w\" \"npm run lite\" ",
+    "typings": "typings"
+  }
+}
