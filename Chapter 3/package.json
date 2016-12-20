@@ -10,7 +10,7 @@
     "url": "git://github.com/deeleman/learning-angular2.git"
   },
   "scripts": {
-    "preinstall": "rm -rf ./built",
+    "preinstall": "rmdir /Q /S built",
     "postinstall": "npm run typings install",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
