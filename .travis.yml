@@ -7,7 +7,7 @@ before_install:
   - sh -e /etc/init.d/xvfb start
 
 before_script:
-  - cd /Chapter 4/
+  - cd /"Chapter 4"
   - npm install -g gulp-cli
   - npm install -g gulp
   - npm install
