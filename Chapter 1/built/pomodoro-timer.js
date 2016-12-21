@@ -59,7 +59,7 @@ System.register(["@angular/core", "@angular/platform-browser-dynamic"], function
                 }),
                 __metadata("design:paramtypes", [])
             ], PomodoroTimerComponent);
-            platform_browser_dynamic_1.bootstrap(PomodoroTimerComponent);
+            platform_browser_dynamic_1.platformBrowserDynamic().bootstrapModule(PomodoroTimerComponent);
         }
     };
 });

@@ -34,7 +34,7 @@ System.register(["@angular/core", "@angular/platform-browser-dynamic"], function
                 }),
                 __metadata("design:paramtypes", [])
             ], HelloAngularComponent);
-            platform_browser_dynamic_1.bootstrap(HelloAngularComponent);
+            platform_browser_dynamic_1.platformBrowserDynamic().bootstrapModule(HelloAngularComponent);
         }
     };
 });

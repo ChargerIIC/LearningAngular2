@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { bootstrap } from '@angular/platform-browser-dynamic';
+import { platformBrowserDynamic  } from '@angular/platform-browser-dynamic';
 
 @Component({
   selector: 'pomodoro-timer',
@@ -55,4 +55,4 @@ class PomodoroTimerComponent {
   }
 }
 
-bootstrap(PomodoroTimerComponent);
+platformBrowserDynamic().bootstrapModule(PomodoroTimerComponent);
